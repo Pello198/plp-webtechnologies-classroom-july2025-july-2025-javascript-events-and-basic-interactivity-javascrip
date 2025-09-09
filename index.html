@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>🌐 Interactive Web Page</h1>
+    <button id="themeToggle">Switch to Dark Mode</button>
+  </header>
+
+  <hr>
+
+  <!-- Counter Feature -->
+  <section>
+    <h2>🎮 Counter Game</h2>
+    <p>Click the button to increase the counter:</p>
+    <div>
+      <span id="counterValue">0</span>
+      <button id="increaseBtn">Increase</button>
+      <button id="decreaseBtn">Decrease</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- FAQ Section -->
+  <section>
+    <h2>❓ FAQ Section</h2>
+    <div class="faq-item">
+      <h3 class="faq-question">What is this project?</h3>
+      <p class="faq-answer">This project demonstrates interactive features using JavaScript.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">How does the counter work?</h3>
+      <p class="faq-answer">Every time you click the increase button, the counter goes up by 1.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">What about the form?</h3>
+      <p class="faq-answer">The form below validates your input before submission using JavaScript.</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Form Section -->
+ <section>
+    <form id="userForm" novalidate>
+      <!-- Name -->
+      <div>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <small class="error" id="nameError"></small>
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required disabled>
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required disabled>
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <!-- Confirm Password -->
+      <div>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required disabled>
+        <small class="error" id="confirmPasswordError"></small>
+      </div>
+
+      <!-- Submit -->
+      <div>
+        <button type="submit" id="submitBtn" disabled>Register</button>
+      </div>
+
+      <!-- Success Message -->
+      <p id="formSuccess" style="display:none;">Form submitted successfully! 🎉</p>
+    </form>
+  </section>
+
+  <!-- Link JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
